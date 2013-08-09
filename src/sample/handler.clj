@@ -1,11 +1,6 @@
 (ns sample.handler
   (:use 
         [compojure.core :only (defroutes GET POST PUT)]
-        ; [noir.util.middleware :as noir]
-        ; [noir.validation :only [wrap-noir-validation]]
-        ; [noir.cookies :only [wrap-noir-cookies]]
-        ; [noir.session :only [mem wrap-noir-session wrap-noir-flash]]
-        ; [hiccup.middleware :only [wrap-base-url]]
         [hiccup.page :only [html5]]
         [compojure.handler :only [api]]
         [ring.middleware.multipart-params :only [wrap-multipart-params]]
@@ -58,13 +53,8 @@
       handler))
 
 (def app (-> #'app-routes
-      ; noir/wrap-request-map
       api
       wrap-multipart-params
-      ; wrap-noir-validation
-      ; wrap-noir-cookies
-      ; wrap-noir-flash
-      ; (wrap-noir-session {:store (memory-store mem)})
       (wrap-if true ; development? 
                wrap-reload {:dirs ["src"]})))
 
