@@ -1,6 +1,7 @@
 A Clojure library for using Are You A Human tests.
 
-Author: david lloyd (http://www.touchsoftware.cc)
+Author: david lloyd (http://www.touchsoftware.cc) Copyright 2013, All rights reserved.
+License: [Creative Commons BY-ND](http://creativecommons.org/licenses/by-nd/3.0/legalcode)
 
 Quick Start Guide:
 
