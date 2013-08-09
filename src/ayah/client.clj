@@ -4,9 +4,13 @@
   (:import (java.net URLEncoder)
 ))
 
-;
-; add [org.clojure/data.json "0.2.2"] [clj-http "0.7.6"] to Leiningen 
-;
+"
+Author: david lloyd, http://www.touchsoftware.cc, 
+Copyright 2013, All rights reserved.
+Licensed under Creative Commons BY-ND http://creativecommons.org/licenses/by-nd/3.0/legalcode
+
+  add [org.clojure/data.json "0.2.2"] [clj-http "0.7.6"] to Leiningen 
+"
 
 (def WSHOST "ws.areyouahuman.com")
 
